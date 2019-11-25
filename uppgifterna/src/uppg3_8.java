@@ -9,6 +9,9 @@ public class uppg3_8 {
 
         System.out.println(" Ange tal 1: ");
         int tal1 = scanner.nextInt();
+        if  (tal1 == 0);
+        System.out.println("Tackar!");
+
         System.out.println (" Ange tal 2: ");
         int tal2 = scanner.nextInt();
 
@@ -20,6 +23,9 @@ public class uppg3_8 {
 
         if (tal1 == tal2)
            System.out.println("Talen är lika stora bish");
+
+
+
 
 
 

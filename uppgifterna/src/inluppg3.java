@@ -1,51 +1,37 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class inluppg3 {
 
-    public static void main (String[] args) {
-    Scanner scanner = new Scanner( System.in );
-    int[] Tal = new int [5];
-    int i;
-    int medeltal = 0;
-    int summa = 0;
-    int största =0;
-    int minsta =0;
-
-    System.out.println(" Skriv in fem tal : ");
-
-        for (i = 0; i < 5; i++) {
-        Tal[i] = scanner.nextInt();
-
-    }
-         for (i = 0; i < 5; i++) {
-        summa += Tal[i];
-
-    }
-         for (i = 0; i<5; i++){
-        medeltal += Tal[i];
-    }
-
-        for (i = 0; i < 5; i++)
-        Tal[i] = scanner.nextInt();
-        if(Tal[i] < största) {
-
-            System.out.println("Talet"  + största + "är det största talet");
+    public static void main(String[] args) {
+        int stor;
+        int num = 0;
+        Scanner s = new Scanner(System.in);
+        int length = 5;
+        int[] a = new int[5];
+        System.out.println("Skriv in fem tal: ");
+        for (int i = 0; i < length; i++) {
+            a[i] = s.nextInt();
         }
 
-        for (i = 0; i <5; i++)
-        Tal[i] = scanner.nextInt();
-        if(Tal[i] > minsta) {
+        for (int i = 0; i < length; i++) {
+            num += a[i];
 
-            System.out.println("Talet" + minsta + "är det minsta talet");
         }
+        System.out.println("Summan av talen är: " + num);
+        num = 0;
+        for (int i = 0; i < length; i++) {
+            num += a[i];
+        }
+        System.out.println("Medeltalet är: " + num / 5);
 
 
-
-    System.out.println(Arrays.toString(Tal));
-
-
-
-
+        stor = a[0];
+        for (int i = 1; i < length; i++) {
+            if (stor < a[i]) {
+                stor = a[i];
+            }
+        }
+        System.out.println("Det största talet är: " + stor);
     }
 }
