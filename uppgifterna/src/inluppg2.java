@@ -19,7 +19,7 @@ public class inluppg2 {
             else if (tal2 > tal1)
                 System.out.println(tal2 + " är större än " + tal1);
 
-           else if (tal1 == tal2)
+           else
                 System.out.println("Talen är lika stora ");
             System.out.println("Ange tal 1: ");
             tal1 = scanner.nextInt();

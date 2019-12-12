@@ -9,8 +9,9 @@ public class inluppg3 {
         Scanner s = new Scanner(System.in);
         int length = 5;
         int[] a = new int[5];
-        System.out.println("Skriv in fem tal: ");
+
         for (int i = 0; i < length; i++) {
+            System.out.println("Skriv in tal " + (i+1) + ":");
             a[i] = s.nextInt();
         }
 

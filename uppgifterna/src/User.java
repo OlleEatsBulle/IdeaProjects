@@ -23,13 +23,13 @@ public class User {
         return Timlön;
     }
     public void setTimlön(int Tl){
-        Timlön = Tl;
+        this.Timlön = Tl;
     }
     public int getTimmar(){
         return Timmar;
     }
     public void setTimmar(int T){
-        Timmar = T;
+        this.Timmar = T;
     }
 
 }
